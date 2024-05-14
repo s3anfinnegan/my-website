@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sean-app/static/css/main.fe9a0d84.css",
-    "main.js": "/sean-app/static/js/main.dc73a298.js",
+    "main.css": "/sean-app/static/css/main.904a5ba8.css",
+    "main.js": "/sean-app/static/js/main.f6ba26a7.js",
     "static/js/453.41335dd0.chunk.js": "/sean-app/static/js/453.41335dd0.chunk.js",
     "index.html": "/sean-app/index.html",
-    "main.fe9a0d84.css.map": "/sean-app/static/css/main.fe9a0d84.css.map",
-    "main.dc73a298.js.map": "/sean-app/static/js/main.dc73a298.js.map",
+    "main.904a5ba8.css.map": "/sean-app/static/css/main.904a5ba8.css.map",
+    "main.f6ba26a7.js.map": "/sean-app/static/js/main.f6ba26a7.js.map",
     "453.41335dd0.chunk.js.map": "/sean-app/static/js/453.41335dd0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe9a0d84.css",
-    "static/js/main.dc73a298.js"
+    "static/css/main.904a5ba8.css",
+    "static/js/main.f6ba26a7.js"
   ]
 }
