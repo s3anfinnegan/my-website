@@ -1,0 +1,31 @@
+/* Header.css */
+
+.header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .header-link {
+    display: flex;
+  }
+  
+  .header-link a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  
+  .header-link a:hover {
+    text-decoration: underline;
+  }
+  

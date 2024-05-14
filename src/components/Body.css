@@ -1,0 +1,37 @@
+/* Body.css */
+
+.hero-text {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 50px 0;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .body-text {
+    margin-top: 30px;
+  }
+  
+  .body-text ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .body-text ul li {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+  
+  .body-text ul li svg {
+    margin-right: 10px;
+  }
+  
