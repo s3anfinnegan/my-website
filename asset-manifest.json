@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/s3anfinnegan.github.io/static/css/main.fe9a0d84.css",
-    "main.js": "/s3anfinnegan.github.io/static/js/main.7252306b.js",
-    "static/js/453.41335dd0.chunk.js": "/s3anfinnegan.github.io/static/js/453.41335dd0.chunk.js",
-    "index.html": "/s3anfinnegan.github.io/index.html",
-    "main.fe9a0d84.css.map": "/s3anfinnegan.github.io/static/css/main.fe9a0d84.css.map",
-    "main.7252306b.js.map": "/s3anfinnegan.github.io/static/js/main.7252306b.js.map",
-    "453.41335dd0.chunk.js.map": "/s3anfinnegan.github.io/static/js/453.41335dd0.chunk.js.map"
+    "main.css": "/s3anfinnegan.github.io/sean-app/static/css/main.fe9a0d84.css",
+    "main.js": "/s3anfinnegan.github.io/sean-app/static/js/main.86daf0d7.js",
+    "static/js/453.41335dd0.chunk.js": "/s3anfinnegan.github.io/sean-app/static/js/453.41335dd0.chunk.js",
+    "index.html": "/s3anfinnegan.github.io/sean-app/index.html",
+    "main.fe9a0d84.css.map": "/s3anfinnegan.github.io/sean-app/static/css/main.fe9a0d84.css.map",
+    "main.86daf0d7.js.map": "/s3anfinnegan.github.io/sean-app/static/js/main.86daf0d7.js.map",
+    "453.41335dd0.chunk.js.map": "/s3anfinnegan.github.io/sean-app/static/js/453.41335dd0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe9a0d84.css",
-    "static/js/main.7252306b.js"
+    "static/js/main.86daf0d7.js"
   ]
 }
