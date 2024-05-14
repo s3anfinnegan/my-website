@@ -1,37 +1,47 @@
-/* Body.css */
+/* CSS for hero and main */
 
 .hero-text {
-    text-align: center;
-    background-color: #333;
-    padding: 50px 0;
-  }
+  text-align: center;
+  padding: 50px 0px; /* Added padding to the left and right sides */
+}
+
+.hero-text h1 {
+  color: #fff;; /* Blood red color */
+  font-family: 'Fidelity Sans', sans-serif; /* Font family fidelity-sans */
+  font-size: 48px; /* Adjust font size as needed */
+  margin: auto;
+}
+
+p{
+color: #fff;
+}
+
+body {
+background-color: #000; 
+}
+
+.body-text {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.body-text ul {
+  list-style-type: none;
+  padding: 0;
+  color: #fff
+}
+
+.body-text ul li {
+  font-size: 14px; /* Adjust font size as needed */
+  margin-bottom: 5px;
+}
+
+/* Styling for icons */
+.body-text ul li svg {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
   
-  .hero-text h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .hero-text p {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 30px;
-  }
-  
-  .body-text {
-    margin-top: 30px;
-  }
-  
-  .body-text ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .body-text ul li {
-    font-size: 1.1em;
-    margin-bottom: 15px;
-  }
-  
-  .body-text ul li svg {
-    margin-right: 10px;
-  }
-  
+
