@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo">
-        <img src="../../public/logo.svg" alt="Finnegan Coat of Arms" />
+        <img src="/logo.svg" alt="Logo" />
       </div>
       <div className="header-link">
         <a href="#download">Download CV</a>
