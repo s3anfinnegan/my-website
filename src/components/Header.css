@@ -7,10 +7,6 @@
   color: #fff;
 }
 
-.logo img {
-  max-width: 100px; /* Adjust according to your logo size */
-}
-
 .header-link a {
   text-decoration: none;
   color: #fff;

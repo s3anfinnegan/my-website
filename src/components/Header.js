@@ -4,9 +4,7 @@ import './Header.css';
 const Header = () => {
   return (
     <div className="header">
-      <div className="logo">
-        <img src="/logo.svg" alt="Logo" />
-      </div>
+      <img src="/logo.svg" alt="Logo" />
       <div className="header-link">
       <a href="/resume.pdf" download>Download CV</a>
         <a href="https://linkedin.com/in/sean-finnegan-/">Connect</a>
