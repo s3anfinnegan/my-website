@@ -8,6 +8,7 @@
 }
 
 .header-link a {
+  align-items: center;
   text-decoration: none;
   color: #fff;
   font-weight: bold;
@@ -19,4 +20,3 @@
   max-width: 175px;
   max-height: 75px;
 }
-
