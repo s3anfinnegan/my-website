@@ -5,10 +5,32 @@
    width="1280"
    height="1280"
    id="svg7336"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs7340" />
+  <sodipodi:namedview
+     id="namedview7338"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.63125"
+     inkscape:cx="639.20792"
+     inkscape:cy="640.79208"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7336" />
   <path
      d="M 40.123 15.356 L 1214.982 33.522 C 1214.982 33.522 1223.788 667.887 1180.026 1200.395 C 1004.415 1608.76 328.675 1790.361 55.62 1194.288 C 9.473 881.039 41.011 251.78 40.123 15.356 Z"
      fill="#FC0800"
