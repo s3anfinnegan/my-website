@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #000000;
+  background-color: #000;
   color: #fff;
 }
 
@@ -19,4 +19,39 @@
 .logo img {
   max-width: 175px;
   max-height: 75px;
+}
+
+/* Responsive CSS */
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-link a {
+    padding: 10px;
+  }
+
+  .logo img {
+    max-width: 125px;
+    max-height: 50px;
+  }
+}
+
+/* Tablet devices (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header {
+    padding: 15px;
+  }
+
+  .header-link a {
+    padding: 15px;
+  }
+
+  .logo img {
+    max-width: 150px;
+    max-height: 65px;
+  }
 }

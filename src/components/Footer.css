@@ -8,3 +8,19 @@
   padding: 20px;
   text-align: center;
 }
+
+/* Responsive CSS */
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  .footer {
+    padding: 10px;
+  }
+}
+
+/* Tablet devices (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .footer {
+    padding: 15px;
+  }
+}
