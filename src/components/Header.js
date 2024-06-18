@@ -5,14 +5,14 @@ import './Header.css';
 const Header = () => {
   return (
     <div className="header">
-      <div className='logo'>
+      <div>
         {/* SVG logo goes here */}
       {/* <img src={logo} alt="Logo" /> */}
       </div>
       <div className="header-link">
-      <a href="/resume.pdf" download>Download CV</a>
-        <a href="https://linkedin.com/in/sean-finnegan-/">Connect</a>
-        <a href="mailto:sean2001finnegan@gmail.com">Contact</a>
+      {/* <a href="/resume.pdf" download>Download CV</a> */}
+        <a href="https://linkedin.com/in/sean-finnegan-/">LinkedIn</a>
+        <a href="mailto:sean2001finnegan@gmail.com">Email</a>
       </div>
     </div>
   );
