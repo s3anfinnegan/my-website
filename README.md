@@ -1,4 +1,4 @@
-# Deploying React App to GitHub Pages (as project page)
+# Deploying React App to GitHub Pages (as project page) with a custom domain name
 ## Pre-reqs/ Assumptions
 - Have a Github repo initialised for the react app
 - VSCode as code editor (preferable)
@@ -24,9 +24,11 @@ and add the following to the scripts: <br />
 
 ## Add a custom domain
 - Go to the DNS records manager (I used Hosting Ireland for my domain)
-- Add A records for the apex domain (example.com) - the IPv4 record values are as follows <br />
+- Add A records for the apex domain (<custom-domain>.com) - the IPv4 record values are as follows <br />
 `185.199.108.153` `185.199.109.153` `185.199.110.153` `185.199.111.153`
 - Add a CNAME record for the www subdomain - the record value will be `<github-username>.github.io`
 - Wait for the DNS record changes to propagate, this can take 24 hours. You can verify the DNS records using https://www.whatsmydns.net/
 - Add the custom domain to the Pages section of the repo settings. The DNS check should be successful
 - Enforce HTTPS. This may not be an option for a little while as it takes time for Github to generate the SSL certificate
+- Edit package.json file to "homepage": "https://<custom-domain>.com"`. Then run predeploy and deploy scripts. Allow for changes to take effect
+- Go to `https://www.<custom-domain>.com"` to see webpage live at custom domain (github subdomain will redirect to this domain now)
