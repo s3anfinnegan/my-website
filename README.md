@@ -36,3 +36,4 @@ and add the following to the scripts: <br />
 ## Troubleshooting
 - SSL certificate not issued/ Can't enforce HTTPS? Allow time for propagation. It takes GH time to issue the certs
 - Made changes to deployed site but now its not available at my custom domain? Check repo settings and ensure the custom domain hasn't been removed during changes
+- Deployment made but not rendering/ showing something else/ 404 error message from GitHub? Allow some time for the deployment process to take place - some times 30 mins to over an hour
