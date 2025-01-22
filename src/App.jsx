@@ -127,16 +127,16 @@ const App = () => {
               <Cloud className="w-8 h-8 text-white mr-3" />
               <h2 className="text-2xl font-bold text-white">Current Role</h2>
             </div>
-            <p className="text-gray-200">
+            <p className="text-gray-200 text-justify">
               Joined Fidelity Investments in 2021 as a summer intern working with FCAT, Fidelity's applied technology team. 
               Rejoined Fidelity after graduating as an associate software engineer, working extensively with NoSql databases in 
               AWS to provide scalable solutions for our internal units. 
             </p>
-            <p className="text-gray-200 mt-4">
+            <p className="text-gray-200 text-justify mt-4">
               Also working with a small team to deliver user-centric 
               GenAI applications, heavily involved in user interviews, product design and application development/ deployment.  
             </p>
-            <p className="text-gray-200 mt-4">
+            <p className="text-gray-200 text-justify mt-4">
               Recently a member of Fidelity's Ireland Innovation Council.
             </p>
           </div>
@@ -146,16 +146,16 @@ const App = () => {
               <Terminal className="w-8 h-8 text-white mr-3" />
               <h2 className="text-2xl font-bold text-white">Startup Experience</h2>
             </div>
-            <p className="text-gray-200">
+            <p className="text-gray-200 text-justify">
             Co-Founded Receipt Relay in college, a retail software solution that allows your business to provide eReceipts 
             without the need for hardware.
             </p>
-            <p className="text-gray-200 mt-4">
+            <p className="text-gray-200 text-justify mt-4">
             After launching an MVP with customers in Galway, went on to raised over €60,000 in 
             funding from Enterprise Ireland, before pivoting towards leveraging the purchase data in receipts to build detailed 
             customer profiles for large retail chains.
             </p>
-            <p className="text-gray-200 mt-4">
+            <p className="text-gray-200 text-justify mt-4">
             Ultimately Receipt Relay failed to gain traction but this was a huge 
             lesson on building things that matter. Later joined an EdTech startup in a DevOps engineering role before 
             starting with Fidelity.
