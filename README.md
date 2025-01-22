@@ -21,6 +21,7 @@ and add the following to the scripts: <br />
 - Run `npm run deploy` -> the console should say "Published" after it is finished
 - Verify deployment by going to the Github repo -> Repo settings -> Pages. There should be information about the latest deployment 
 - Go to `https://<github-username>.github.io/<repo-name>` to see the webpage live
+- Allow time for deployment process to take place, changes will not be immediately visible
 
 ## Add a custom domain
 - Go to the DNS records manager (I used Hosting Ireland for my domain)
