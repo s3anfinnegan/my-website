@@ -32,3 +32,7 @@ and add the following to the scripts: <br />
 - Enforce HTTPS. This may not be an option for a little while as it takes time for Github to generate the SSL certificate
 - Edit package.json file to "homepage": "https://<custom-domain>.com"`. Then run predeploy and deploy scripts. Allow for changes to take effect
 - Go to `https://www.<custom-domain>.com"` to see webpage live at custom domain (github subdomain will redirect to this domain now)
+
+## Troubleshooting
+- SSL certificate not issued/ Can't enforce HTTPS? Allow time for propagation. It takes GH time to issue the certs
+- Made changes to deployed site but now its not available at my custom domain? Check repo settings and ensure the custom domain hasn't been removed during changes
