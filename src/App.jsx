@@ -23,16 +23,16 @@ const ArticlePreview = ({ url, title, description }) => (
     rel="noopener noreferrer" 
     className="block mt-4 bg-white/5 rounded-lg overflow-hidden hover:bg-white/10 transition-colors"
   >
-    <div className="p-4 flex gap-4">
-      <div className="w-24 h-24 bg-gray-100 rounded overflow-hidden flex-shrink-0">
+    <div className="p-3 sm:p-4 flex flex-col sm:flex-row gap-4">
+      <div className="w-full sm:w-24 h-24 bg-gray-100 rounded overflow-hidden flex-shrink-0">
         <NewspaperIcon />
       </div>
       <div className="flex-1">
-        <h4 className="font-medium text-white mb-2 flex items-center gap-2">
+        <h4 className="font-medium text-white mb-2 flex items-center gap-2 text-sm sm:text-base">
           {title}
           <ExternalLink className="w-4 h-4" />
         </h4>
-        <p className="text-gray-300 text-sm line-clamp-2">
+        <p className="text-gray-300 text-xs sm:text-sm line-clamp-2">
           {description}
         </p>
       </div>
@@ -76,9 +76,9 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500">
       {/* Navigation Bar */}
-      <nav className="bg-white/10 backdrop-blur-md border-b border-white/20">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-white font-bold text-xl">Seán Finnegan</div>
+      <nav className="bg-white/10 backdrop-blur-md border-b border-white/20 sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+          <div className="text-white font-bold text-xl mb-4 sm:mb-0">Seán Finnegan</div>
           <div className="relative">
             <button
               onClick={() => setIsContactOpen(!isContactOpen)}
@@ -112,16 +112,16 @@ const App = () => {
       <main className="max-w-6xl mx-auto px-4 py-16">
         {/* Hero Section */}
         <div className="text-center text-white mb-16">
-          <h1 className="text-5xl font-bold mb-6">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6">
             Welcome to My Portfolio
           </h1>
-          <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto px-4">
             Associate Software Engineer 
           </p>
         </div>
 
         {/* Experience Cards */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
             <div className="flex items-center mb-4">
               <Cloud className="w-8 h-8 text-white mr-3" />
@@ -164,12 +164,12 @@ const App = () => {
         </div>
 
         {/* Articles Section */}
-        <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
+        <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-white/20">
           <div className="flex items-center mb-6">
-            <Rocket className="w-8 h-8 text-white mr-3" />
-            <h2 className="text-2xl font-bold text-white">Startup Articles</h2>
+            <Rocket className="w-6 h-6 sm:w-8 sm:h-8 text-white mr-3" />
+            <h2 className="text-xl sm:text-2xl font-bold text-white">Startup Articles</h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {articles.map((article, index) => (
               <ArticlePreview key={index} {...article} />
             ))}
@@ -177,15 +177,15 @@ const App = () => {
         </div>
 
         {/* Skills Section */}
-        <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 mt-8">
+        <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-white/20 mt-8">
           <div className="flex items-center mb-6">
-            <Cpu className="w-8 h-8 text-white mr-3" />
-            <h2 className="text-2xl font-bold text-white">Technical Skills</h2>
+            <Cpu className="w-6 h-6 sm:w-8 sm:h-8 text-white mr-3" />
+            <h2 className="text-xl sm:text-2xl font-bold text-white">Technical Skills</h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {skills.map((skill) => (
-              <div key={skill} className="bg-white/5 rounded-lg p-4 text-center">
-                <span className="text-white font-medium">{skill}</span>
+              <div key={skill} className="bg-white/5 rounded-lg p-3 sm:p-4 text-center">
+                <span className="text-white font-medium text-sm sm:text-base">{skill}</span>
               </div>
             ))}
           </div>
