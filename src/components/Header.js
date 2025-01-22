@@ -4,7 +4,7 @@ import './Header.css';
 
 const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <div>
         {/* SVG logo goes here */}
       {/* <img src={logo} alt="Logo" /> */}
@@ -14,7 +14,7 @@ const Header = () => {
         <a href="https://linkedin.com/in/sean-finnegan-/">LinkedIn</a>
         <a href="mailto:sean2001finnegan@gmail.com">Email</a>
       </div>
-    </div>
+    </header>
   );
 }
 
