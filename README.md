@@ -2,6 +2,7 @@
 ## Pre-reqs/ Assumptions
 - Have a Github repo initialised for the react app
 - VSCode as code editor (preferable)
+- Own a custom domain (optional)
 
 ## React app setup with GH pages
 `npx create-react-app <app-name>` (this will generate a boilerplate react app, customise as desired) <br />
