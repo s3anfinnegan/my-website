@@ -113,11 +113,11 @@ const App = () => {
         {/* Hero Section */}
         <div className="text-center text-white mb-16">
           <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            Welcome to My Portfolio
+            I'm Seán, a Cloud Engineer
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto px-4">
-            Associate Software Engineer 
-          </p>
+          {/* <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto px-4">
+            I work at Fidelity Investments but I have some side projects too
+          </p> */}
         </div>
 
         {/* Experience Cards */}
