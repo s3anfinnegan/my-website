@@ -97,7 +97,7 @@ const Career = () => {
       </div>
 
       <p className="text-gray-300 text-sm text-center mt-4">
-        The chart looks nice but progress is not linear
+        The graph looks nice but progress is not linear
       </p>
     </div>
   );

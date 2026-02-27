@@ -1,4 +1,4 @@
-import { Rocket, ChevronDown, Mail, Linkedin, Github, Terminal, Cloud, Database, Cpu, ExternalLink, BriefcaseBusiness } from 'lucide-react';
+import { Database, ExternalLink} from 'lucide-react';
 
 const Education = () => {
 

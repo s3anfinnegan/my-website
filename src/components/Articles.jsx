@@ -1,4 +1,4 @@
-import { Rocket, Newspaper, Mail, Linkedin, Github, Terminal, Cloud, Database, Cpu, ExternalLink, BriefcaseBusiness } from 'lucide-react';
+import { Newspaper, ExternalLink } from 'lucide-react';
 
 
 const Articles = () => {
