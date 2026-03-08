@@ -21,7 +21,7 @@ const Career = () => {
     { year: 2023, milestone: "After returning from the US at the end of the summer, I interviewed for a grad role with Fidelity Investments and got an offer for January 2024. For the few months in between, I joined an edtech startup called Breakthrough Maths as their third engineering hire and worked under a brilliant CTO. I also ran my first half marathon.", growth: 80 },
     { year: 2024, milestone: "I started working in Fidelity and joined the cloud database team where I worked on building database deployment tools. I ran my first full marathon, a bunch of half marathons and did a sprint triathlon. I ticked off some more countries around Europe and spent a few days exploring Tangier.", growth: 90 },
     { year: 2025, milestone: "I was promoted to the equivalent of Engineer II and in my spare time I started working on a lot of side projects. I travelled to Indonesia and Sydney and thru-hiked the Maumturks over a two day trip.", growth: 100 },
-    { year: 2026, milestone: "I reached the coveted two years experience as an engineer in January (and realised it didn't mean much beyond my CV). I figured out the types of projects I do and don't like working on and decided one of these projects would be my next 'job'.", growth: 110 }
+    { year: 2026, milestone: "I reached two years experience as an engineer in January (and realised it didn't mean much beyond my CV). I figured out the types of projects I do and don't like working on.", growth: 110 }
   ];
 
   // Spread out same-year milestones slightly (horizontally)
