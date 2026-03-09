@@ -77,8 +77,8 @@ const Home = () => (
         </h2>
       </div>
       <p className="text-xl md:text-2xl text-gray-300 leading-relaxed font-light">
-          If by some rare experience, I write something that I think is worth sharing, I'll put it on this website.
-          And if by something even rarer, you want to read it, you can do so <Link to="/writing" className="text-orange-400 hover:underline">here</Link>.
+          In the rare case I write something that I think is worth sharing, I'll put it on this website.
+          And in the rarer case you want to read it, you can do so <Link to="/writing" className="text-orange-400 hover:underline">here</Link>.
       </p>
     </section>
   </div>
