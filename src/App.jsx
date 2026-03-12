@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Career from "./components/Career";
 import Writing from "./pages/Writing";
+import Route52 from "./pages/Route52";
 
 // --- Interactive Liquid Background Component ---
 const LiquidBackground = () => {
@@ -96,6 +97,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/writing" element={<Writing />} />
+            <Route path="/route52" element={<Route52 />} />
           </Routes>
         </main>
 

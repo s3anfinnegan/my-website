@@ -12,8 +12,4 @@ The website is styled with Tailwind and the liquid background/ moving gradiant e
 
 ## Deployment
 
-The site was initially hosted using GitHub pages but I swapped to Vercel for what I believe is a smoother deployment experience. 
-
-## License
-
-This project is open source and available under the MIT License.
+The site was initially hosted using GitHub pages but I swapped to Vercel for what I believe is a smoother deployment experience. Registering and assigning a custom domain name with Vercel is also a super smooth experience. 

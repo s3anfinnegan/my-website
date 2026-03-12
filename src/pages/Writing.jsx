@@ -117,28 +117,28 @@ const Writing = () => {
   target="popupwindow"
   className="mt-16 max-w-md mx-auto bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white"
 >
-  <label htmlFor="bd-email" className="block text-sm text-gray-300 mb-2">
-    Subscribe for new posts
+  <label htmlFor="bd-email" className="block text-sm text-gray-300 mb-3">
+    Get notified when I post something.
   </label>
 
-  <div className="flex gap-2">
+  <div className="flex flex-col sm:flex-row gap-3">
     <input
       type="email"
       name="email"
       id="bd-email"
       placeholder="Enter your email"
-      className="flex-1 px-3 py-2 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white/30"
       required
+      className="flex-1 px-4 py-2 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white/30"
     />
 
     <input
       type="submit"
       value="Subscribe"
-      className="px-4 py-2 rounded-md bg-white/20 hover:bg-white/30 transition cursor-pointer"
+      className="px-5 py-2 rounded-md bg-white/20 hover:bg-white/30 transition cursor-pointer whitespace-nowrap"
     />
   </div>
 
-  <p className="text-xs text-gray-400 mt-3">
+  <p className="text-xs text-gray-400 mt-4 text-center sm:text-left">
     <a
       href="https://buttondown.com/refer/sean-finnegan"
       target="_blank"
