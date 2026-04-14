@@ -54,7 +54,7 @@ const Home = () => (
           <br/>
           I'm a cloud engineer at <a href="https://www.fidelity.com/" className="text-orange-400 hover:underline">Fidelity Investments</a>, where I build platform tools for our engineering teams. 
           Previously, I co-founded a <a href="https://www.independent.ie/business/irish/30-under-30-young-guns-who-are-shooting-for-the-stars/41045671.html" className="text-orange-400 hover:underline">startup</a> and I'm working on a few side projects so I can do that again.
-          If you want to contact me, you can reach me on <a href="https://www.linkedin.com/in/sean-finnegan-/" className="text-orange-400 hover:underline">LinkedIn</a>.
+          If you want to contact me, you can reach me on <a href="https://www.linkedin.com/in/sean-finnegan-/" className="text-orange-400 hover:underline">LinkedIn</a>. Stuff that I'm publicly working on can be found on my <a href="https://www.github.com/s3anfinnegan" className="text-orange-400 hover:underline">GitHub</a>.
           
         </p>
       </div>
