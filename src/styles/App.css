@@ -1,4 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Mono:wght@300;400&family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500&display=swap');
+
+/* ── Variables ─────────────────────────────────── */
+:root {
+  --bg:      #f8f5f0;
+  --ink:     #111110;
+  --muted:   #7a7268;
+  --accent:  #2d5a3e;
+  --rule:    #e2dbd2;
+  --surface: #f0ece5;
+
+  --f-display: 'Cormorant Garamond', Georgia, serif;
+  --f-mono:    'DM Mono', 'Courier New', monospace;
+  --f-body:    'Bricolage Grotesque', system-ui, sans-serif;
+}
+
+/* ── Reset ─────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
 body {
-  background-color: #333; /* Dark grey/black */
-  color: #fff; /* Text color */
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Site Shell ────────────────────────────────── */
+.site-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.site-footer {
+  border-top: 1px solid var(--rule);
+  padding: 32px 0 56px;
+}
+
+.site-footer p {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ── Hero ──────────────────────────────────────── */
+.hero {
+  padding: 96px 0 72px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.hero-eyebrow {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+
+.hero-name {
+  font-family: var(--f-display);
+  font-size: clamp(68px, 10vw, 112px);
+  font-weight: 300;
+  line-height: 0.88;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-bottom: 40px;
+}
+
+.hero-dash {
+  width: 36px;
+  height: 1px;
+  background: var(--ink);
+  margin-bottom: 28px;
+}
+
+.hero-sub {
+  font-size: 17px;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 380px;
+}
+
+/* ── Sections ──────────────────────────────────── */
+.section {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  column-gap: 48px;
+  padding: 64px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.section-label {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-top: 4px;
+}
+
+/* ── Prose ─────────────────────────────────────── */
+.prose p {
+  font-size: 16px;
+  line-height: 1.78;
+  font-weight: 300;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+.prose p:last-of-type { margin-bottom: 0; }
+
+.prose a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  transition: opacity 0.15s ease;
+}
+.prose a:hover { opacity: 0.6; }
+
+.contact-links {
+  display: flex;
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.contact-links a {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 2px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.contact-links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ── Timeline ──────────────────────────────────── */
+.timeline { position: relative; }
+
+/* The vertical spine sits at x=52px */
+.timeline-spine {
+  position: absolute;
+  left: 52px;
+  top: 8px;
+  bottom: 48px;
+  width: 1px;
+  background: var(--rule);
+}
+
+.milestone {
+  position: relative;
+  padding: 0 0 44px 80px; /* 80px = 52px spine + 28px gap */
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.milestone.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Year sits flush-right in the 48px column before the spine */
+.milestone-year {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 44px;
+  text-align: right;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  line-height: 1;
+}
+
+/* Dot centered on the spine (52px) */
+.milestone-dot {
+  position: absolute;
+  left: 48px;          /* 52px spine − 4px (half of 9px dot) */
+  top: 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1.5px solid var(--rule);
+  background: var(--bg);
+  transition: border-color 0.4s ease, background 0.4s ease;
+}
+
+.milestone.in-view .milestone-dot {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.milestone-text {
+  font-size: 15px;
+  line-height: 1.72;
+  font-weight: 300;
+  color: var(--ink);
+}
+
+.milestone-tag {
+  display: inline-block;
+  margin-top: 6px;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* ── Writing / Route52 pages (light theme) ─────── */
+.page-back {
+  display: inline-block;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  margin-bottom: 48px;
+  transition: color 0.15s;
+}
+.page-back:hover { color: var(--ink); }
+
+/* ── Responsive ────────────────────────────────── */
+@media (max-width: 640px) {
+  .site-wrap { padding: 0 24px; }
+
+  .section {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    padding: 48px 0;
+  }
+
+  .section-label { padding-top: 0; }
+
+  .hero-name { font-size: clamp(56px, 15vw, 80px); }
+
+  .timeline-spine { left: 0; }
+
+  .milestone {
+    padding-left: 20px;
+  }
+
+  .milestone-year {
+    position: static;
+    display: block;
+    width: auto;
+    text-align: left;
+    margin-bottom: 6px;
+  }
+
+  .milestone-dot { left: -5px; }
 }

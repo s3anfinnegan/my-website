@@ -1,6 +1,6 @@
-import React,{useState} from 'react';
-import { Link } from 'react-router-dom';
-import { Mail, ArrowLeft } from 'lucide-react';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { Mail, ArrowLeft } from "lucide-react";
 
 const Route52 = () => {
   const [copied, setCopied] = useState(false);
@@ -10,58 +10,103 @@ const Route52 = () => {
     e.preventDefault();
     navigator.clipboard.writeText(email);
     setCopied(true);
-    
-    // Reset the "Copied" text after 2 seconds
     setTimeout(() => setCopied(false), 2000);
   };
 
   return (
-    <div className="min-h-[80vh] flex items-center justify-center px-6">
-      {/* The Card */}
-      <div className="max-w-xl w-full bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden group">
-        
-        {/* Subtle decorative glow in the corner of the card */}
-        <div className="absolute -top-24 -right-24 w-48 h-48 bg-orange-500/10 blur-[60px] rounded-full group-hover:bg-orange-500/20 transition-colors duration-700" />
-
-        <Link 
-          to="/" 
-          className="inline-flex items-center text-xs uppercase tracking-widest text-gray-400 hover:text-white transition-colors mb-12"
+    <div style={{
+      minHeight: "80vh",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      paddingTop: 64,
+      paddingBottom: 64,
+    }}>
+      <div style={{
+        width: "100%",
+        maxWidth: 520,
+        border: "1px solid var(--rule)",
+        borderRadius: 16,
+        padding: "48px",
+        background: "var(--bg)",
+      }}>
+        <Link
+          to="/"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 8,
+            fontFamily: "var(--f-mono)",
+            fontSize: 11,
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            color: "var(--muted)",
+            textDecoration: "none",
+            marginBottom: 48,
+            transition: "color 0.15s",
+          }}
         >
-          <ArrowLeft className="w-3 h-3 mr-2" />
-          View the rest of my website
+          <ArrowLeft size={12} />
+          Back to site
         </Link>
 
-        <header className="mb-8">
-          <div className="text-orange-400 font-mono text-sm mb-2">Welcome to the webpage!</div>
-          <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+        <header style={{ marginBottom: 32 }}>
+          <p style={{
+            fontFamily: "var(--f-mono)",
+            fontSize: 11,
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            color: "var(--accent)",
+            marginBottom: 12,
+          }}>
             Route52 Engineering
+          </p>
+          <h1 style={{
+            fontFamily: "var(--f-display)",
+            fontStyle: "italic",
+            fontWeight: 300,
+            fontSize: "clamp(32px, 5vw, 44px)",
+            lineHeight: 1.1,
+            color: "var(--ink)",
+          }}>
+            Need a hand with a website?
           </h1>
         </header>
 
-        <div className="space-y-6 text-lg text-gray-300 font-light leading-relaxed">
-          <p>
-            If you're looking for a hand setting up a website, I might be able to help.
+        <div style={{ marginBottom: 40 }}>
+          <p style={{ fontSize: 16, fontWeight: 300, lineHeight: 1.75, color: "var(--ink)", marginBottom: 16 }}>
+            I might be able to help. Send me an email and I'll get back to you.
           </p>
-          
-          <p>
-            Send me an email here and I'll get in touch.
-          </p>
-
-          <button 
-            onClick={handleCopy}
-            className={`inline-flex items-center space-x-3 px-6 py-3 rounded-full font-medium transition-all transform hover:scale-105 active:scale-95 mt-4 ${
-                copied ? 'bg-green-500 text-white' : 'bg-white text-black hover:bg-orange-500 hover:text-white'
-            }`}
-            >
-            <Mail className="w-5 h-5" />
-            <span>{copied ? "Email Copied!" : "Click to copy email"}</span>
-            </button>
         </div>
 
-        <footer className="mt-12 pt-8 border-t border-white/5">
-          <p className="italic text-gray-400">
-            All the best, <br />
-            <span className="text-white font-medium not-italic">Seán</span>
+        <button
+          onClick={handleCopy}
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 10,
+            padding: "12px 24px",
+            border: "1px solid var(--ink)",
+            borderRadius: 40,
+            background: copied ? "var(--accent)" : "var(--ink)",
+            borderColor: copied ? "var(--accent)" : "var(--ink)",
+            color: "var(--bg)",
+            fontFamily: "var(--f-mono)",
+            fontSize: 12,
+            letterSpacing: "0.1em",
+            textTransform: "uppercase",
+            cursor: "pointer",
+            transition: "background 0.2s, border-color 0.2s",
+          }}
+        >
+          <Mail size={15} />
+          {copied ? "Copied!" : "Copy email"}
+        </button>
+
+        <footer style={{ marginTop: 48, paddingTop: 32, borderTop: "1px solid var(--rule)" }}>
+          <p style={{ fontStyle: "italic", color: "var(--muted)", fontSize: 15, fontFamily: "var(--f-display)" }}>
+            All the best,{" "}
+            <span style={{ color: "var(--ink)", fontWeight: 400 }}>Seán</span>
           </p>
         </footer>
       </div>
