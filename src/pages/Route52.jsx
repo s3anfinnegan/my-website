@@ -15,20 +15,19 @@ const Route52 = () => {
 
   return (
     <div style={{
-      minHeight: "80vh",
+      minHeight: "100vh",
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      paddingTop: 64,
-      paddingBottom: 64,
+      padding: "48px 52px",
     }}>
       <div style={{
         width: "100%",
-        maxWidth: 520,
+        maxWidth: 480,
         border: "1px solid var(--rule)",
-        borderRadius: 16,
-        padding: "48px",
-        background: "var(--bg)",
+        borderRadius: 12,
+        padding: "44px 48px",
+        background: "var(--surface)",
       }}>
         <Link
           to="/"
@@ -37,47 +36,51 @@ const Route52 = () => {
             alignItems: "center",
             gap: 8,
             fontFamily: "var(--f-mono)",
-            fontSize: 11,
-            letterSpacing: "0.14em",
+            fontSize: 10,
+            letterSpacing: "0.16em",
             textTransform: "uppercase",
             color: "var(--muted)",
             textDecoration: "none",
-            marginBottom: 48,
+            marginBottom: 44,
             transition: "color 0.15s",
           }}
         >
-          <ArrowLeft size={12} />
-          Back to site
+          <ArrowLeft size={11} />
+          Back
         </Link>
 
-        <header style={{ marginBottom: 32 }}>
+        <header style={{ marginBottom: 28 }}>
           <p style={{
             fontFamily: "var(--f-mono)",
-            fontSize: 11,
-            letterSpacing: "0.14em",
+            fontSize: 10,
+            letterSpacing: "0.2em",
             textTransform: "uppercase",
             color: "var(--accent)",
-            marginBottom: 12,
+            marginBottom: 14,
           }}>
             Route52 Engineering
           </p>
           <h1 style={{
             fontFamily: "var(--f-display)",
-            fontStyle: "italic",
-            fontWeight: 300,
-            fontSize: "clamp(32px, 5vw, 44px)",
+            fontWeight: 700,
+            fontSize: "clamp(28px, 4vw, 36px)",
             lineHeight: 1.1,
             color: "var(--ink)",
+            letterSpacing: "-0.02em",
           }}>
             Need a hand with a website?
           </h1>
         </header>
 
-        <div style={{ marginBottom: 40 }}>
-          <p style={{ fontSize: 16, fontWeight: 300, lineHeight: 1.75, color: "var(--ink)", marginBottom: 16 }}>
-            I might be able to help. Send me an email and I'll get back to you.
-          </p>
-        </div>
+        <p style={{
+          fontSize: 15,
+          fontWeight: 300,
+          lineHeight: 1.75,
+          color: "var(--ink)",
+          marginBottom: 36,
+        }}>
+          I might be able to help. Send me an email and I'll get back to you.
+        </p>
 
         <button
           onClick={handleCopy}
@@ -85,28 +88,37 @@ const Route52 = () => {
             display: "inline-flex",
             alignItems: "center",
             gap: 10,
-            padding: "12px 24px",
-            border: "1px solid var(--ink)",
+            padding: "11px 22px",
+            border: "1px solid rgba(255,255,255,0.15)",
             borderRadius: 40,
-            background: copied ? "var(--accent)" : "var(--ink)",
-            borderColor: copied ? "var(--accent)" : "var(--ink)",
-            color: "var(--bg)",
+            background: copied ? "var(--accent)" : "rgba(255,255,255,0.06)",
+            borderColor: copied ? "var(--accent)" : "rgba(255,255,255,0.15)",
+            color: "var(--ink)",
             fontFamily: "var(--f-mono)",
-            fontSize: 12,
-            letterSpacing: "0.1em",
+            fontSize: 11,
+            letterSpacing: "0.12em",
             textTransform: "uppercase",
             cursor: "pointer",
             transition: "background 0.2s, border-color 0.2s",
           }}
         >
-          <Mail size={15} />
+          <Mail size={14} />
           {copied ? "Copied!" : "Copy email"}
         </button>
 
-        <footer style={{ marginTop: 48, paddingTop: 32, borderTop: "1px solid var(--rule)" }}>
-          <p style={{ fontStyle: "italic", color: "var(--muted)", fontSize: 15, fontFamily: "var(--f-display)" }}>
+        <footer style={{
+          marginTop: 44,
+          paddingTop: 28,
+          borderTop: "1px solid var(--rule)",
+        }}>
+          <p style={{
+            fontSize: 14,
+            fontWeight: 300,
+            color: "var(--muted)",
+            fontStyle: "italic",
+          }}>
             All the best,{" "}
-            <span style={{ color: "var(--ink)", fontWeight: 400 }}>Seán</span>
+            <span style={{ color: "var(--ink)", fontStyle: "normal" }}>Seán</span>
           </p>
         </footer>
       </div>

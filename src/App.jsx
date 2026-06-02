@@ -8,65 +8,50 @@ import "./styles/App.css";
 const Home = () => (
   <div>
     <section className="hero">
-      <h1 className="hero-name">
-        Seán<br />Finnegan
-      </h1>
-    </section>
-
-    <section className="section">
-      <span className="section-label">About</span>
-      <div className="prose">
-        <p>
-          Welcome to my website! I built this to show off the things I've done (but also because a 
-          software engineer should have a website?).
-          
-          I'm an engineer on Fidelity Investments' agentic workflows team, where I build
-          tools that help developers work with frontier AI models. Before that I spent two
-          years on the cloud database team, and before that I co-founded{" "}
-          <a
-            href="https://www.independent.ie/business/irish/30-under-30-young-guns-who-are-shooting-for-the-stars/41045671.html"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Receipt Relay
-          </a>{" "}
-          — we raised €50k, secured an LOI from Lidl Ireland, and learned a lot about
-          what product-market fit isn't.
-        </p>
-        <p>
-          I'm based in Galway, Ireland. Outside of work I like being outdoors — hiking,
-          running, and travelling when I can.
-        </p>
-        <nav className="contact-links">
-          <a
-            href="https://www.linkedin.com/in/sean-finnegan-/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="https://www.github.com/s3anfinnegan"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-        </nav>
+      <div>
+        <h1 className="hero-name">Seán Finnegan</h1>
+        <p className="hero-tagline">Software Engineer · Galway, Ireland</p>
       </div>
+      <nav className="hero-links">
+        <a href="https://www.linkedin.com/in/sean-finnegan-/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://www.github.com/s3anfinnegan" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
     </section>
 
-    <section className="section">
-      <span className="section-label">Career</span>
-      <Career />
-    </section>
+    <div className="two-col">
+      <aside className="col-about">
+        <span className="section-label">About</span>
+        <div className="prose">
+          <p>
+            Welcome to my website! This exists to show off the things I've worked on/ am working on.
+          </p>
+          <p>
+            I'm a software engineer at Fidelity Investments where I build agentic tools to enable engineers ship fast and secure. Before that I spent two
+            years as a cloud engineer. Before Fidelity, I co-founded{" "}
+            <a href="https://www.independent.ie/business/irish/30-under-30-young-guns-who-are-shooting-for-the-stars/41045671.html"
+              target="_blank"
+              rel="noreferrer"
+            > a startup </a>{" "} and I spend a lot of time playing with ideas and side projects.
 
-    <section className="section">
+          </p>
+          <p>
+            If you want to contact me, you can reach me on <a href="https://www.linkedin.com/in/sean-finnegan-/" target="_blank" rel="noreferrer">LinkedIn</a>. 
+            Stuff that I'm publicly working on can be found on my <a href="https://www.github.com/s3anfinnegan" target="_blank" rel="noreferrer">GitHub</a>.
+          </p>
+        </div>
+      </aside>
+
+      <main className="col-career">
+        <span className="section-label">Career</span>
+        <Career />
+      </main>
+    </div>
+
+    <section className="section-writing">
       <span className="section-label">Writing</span>
       <div className="prose">
         <p>
-          In the rare case I write something worth sharing, I put it{" "}
-          <Link to="/writing">here</Link>.
+          In the rare case I write something that I think is worth sharing, I'll put it on this website. And in the rarer case you want to read it, you can do so <Link to="/writing">here</Link>.
         </p>
       </div>
     </section>
