@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 const milestones = [
   {
     year: "2026",
-    text: "(Present day) I left the cloud databse team and I am currently building agentic tools for the thousands of engineers that work on Fidelity's products and services.",
+    text: "(Present day) I left the cloud database team and I am currently building agentic tools for the thousands of engineers that work on Fidelity's products and services.",
     tag: "engineering",
   },
   {
