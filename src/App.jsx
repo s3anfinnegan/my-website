@@ -26,8 +26,7 @@ const Home = () => (
             Welcome to my website! This exists to show off the things I've worked on/ am working on.
           </p>
           <p>
-            I'm a software engineer at Fidelity Investments where I build agentic tools to enable engineers ship fast and secure. Before that I spent two
-            years as a cloud engineer. Before Fidelity, I co-founded{" "}
+            I'm a software engineer who spent the last few years at Fidelity Investments building agentic tools to help engineers ship fast and securely, and before that working as a cloud engineer. Before Fidelity, I co-founded{" "}
             <a href="https://www.independent.ie/business/irish/30-under-30-young-guns-who-are-shooting-for-the-stars/41045671.html"
               target="_blank"
               rel="noreferrer"
